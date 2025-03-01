@@ -87,6 +87,27 @@
     </div>
   </label>
 
+  <!-- JavaScript para alternar entre temas -->
+  <script>
+    const themeSwitch = document.getElementById('input');  // Referência ao input do switch
+    const body = document.body;  // Referência ao elemento body
+
+    // Função para alternar o tema
+    function toggleTheme() {
+        if (themeSwitch.checked) {
+            body.classList.add('dark-theme');
+            body.classList.remove('light-theme');
+        } else {
+            body.classList.add('light-theme');
+            body.classList.remove('dark-theme');
+        }
+    }
+
+    // Monitorar as mudanças no switch
+    themeSwitch.addEventListener('change', toggleTheme);
+
+    // Chamar a função para definir o estado inicial com base no checkbox (se estiver marcado, dark-theme será ativado)
+    toggleTheme();
 </script>
 
 </body>
