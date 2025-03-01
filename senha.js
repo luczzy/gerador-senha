@@ -10,3 +10,14 @@ function gerarSenha(tamanho = 12) {
 
     return senha;
 }
+
+// Adiciona a funcionalidade ao botão "Gerar Senha"
+const form = document.querySelector('.form');
+const inputSenha = document.querySelector('#generate');
+
+form.addEventListener('submit', function (event) {
+    event.preventDefault(); // Impede o envio do formulário
+
+    const senhaGerada = gerarSenha(12);  // Define o comprimento da senha
+    inputSenha.value = senhaGerada;  // Coloca a senha gerada no campo de entrada
+});
