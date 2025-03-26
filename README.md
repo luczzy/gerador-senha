@@ -1,4 +1,4 @@
-# **Projeto Gerador de Senhas Seguras com alternância de tema**
+# **Gerador de Senhas Seguras com alternância de tema**
 Este projeto é um simples gerador de senhas em HTML, CSS e JavaScript. Ele permite ao usuário gerar senhas aleatórias e também possui a funcionalidade de alternar entre o tema claro e escuro.
 
 ## **Índice**
